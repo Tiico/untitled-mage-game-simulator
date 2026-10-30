@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Untitled Mage Game design has moved</title>
+<link rel="canonical" href="https://tiico.github.io/untitled-mage-game-design/prototypes/">
+<h1>Untitled Mage Game design has moved</h1>
+<p><a id="destination" href="https://tiico.github.io/untitled-mage-game-design/prototypes/">Open the new address</a></p>
+<script>
+const oldPrefix = '/untitled-mage-game-simulator';
+const path = location.pathname;
+if (path === oldPrefix || path.startsWith(oldPrefix + '/')) {
+    const suffix = path.slice(oldPrefix.length);
+    const destination = 'https://tiico.github.io/untitled-mage-game-design' + (suffix || '/') + location.search + location.hash;
+    document.getElementById('destination').href = destination;
+    location.replace(destination);
+}
+</script></html>
